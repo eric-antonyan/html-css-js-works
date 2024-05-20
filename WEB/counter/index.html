@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="message"></div>
+    <div class="container">
+      <div class="content">
+        <div class="shareBtn">
+          <button>Share the game <i class="fa fa-share"></i></button>
+        </div>
+        <div class="howToPlay">
+          <button>HOW TO PLAY</button>
+          <div class="content">
+            <h3>Rules</h3>
+            <ul>
+              <li>Խաղը բավակնին սինխրոնիզացված է, հաքերային հարձակումներց պաշտպանված։</li>
+              <li>Հետաքրքիր խաղ, որով կարող ենք հասնել նպատակակետին, խաղում չենք կարող օգտագործել 0-ից փոքր թվեր։</li>
+              <li>Գեղեցիկ դիզայն։</li>
+              <li>Խաղը ստեղծել է <b>Էրիկ Անտոյանը</b></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <h1>Counter App</h1>
+          <div class="start">
+            <select name="" id="language">
+              <option value="default">Language</option>
+              <option selected value="am">Armenian</option>
+              <option value="en">English</option>
+            </select>
+            <p>The min number is 1000</p>
+            <input
+              id="targetNumber"
+              type="number"
+              placeholder="Enter the target number"
+            />
+            <button id="submitBtn" type="submit" class="align-items: center;">
+              SUBMIT
+            </button>
+          </div>
+        <div class="game">
+          <div id="counter">0</div>
+          <div id="btnsHide" class="btns">
+            <button id="plusBtn">+</button>
+            <button id="minusBtn">-</button>
+          </div>
+          <div class="btns">
+            <button class="hide" id="again">AGAIN</button>
+          </div>
+          <div id="gameMessage" class="msg hide">Your name</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://functionalalertapi.erikantonyan.repl.co/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

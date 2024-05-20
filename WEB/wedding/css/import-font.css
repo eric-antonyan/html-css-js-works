@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'MontserratARM';
+  src: url('https://static.tildacdn.com/tild3431-3137-4835-a232-396466356264/Montserratarm-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'MontserratARM';
+  src: url('https://static.tildacdn.com/tild6234-6264-4837-b834-623938656164/Montserratarm-ExtraL.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'MontserratARM';
+  src: url('https://static.tildacdn.com/tild6166-3730-4630-a537-333734306461/Montserratarm-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'MontserratARM';
+  src: url('https://static.tildacdn.com/tild3766-3365-4533-a135-623039303635/Montserratarm-Regula.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'MontserratARM';
+  src: url('https://static.tildacdn.com/tild6335-6230-4861-a461-346532656365/Montserratarm-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'MontserratARM';
+  src: url('https://static.tildacdn.com/tild6132-3439-4363-b366-613466313431/Montserratarm-SemiBo.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'MontserratARM';
+  src: url('https://static.tildacdn.com/tild6163-3466-4234-a339-306138633430/Montserratarm-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'MontserratARM';
+  src: url('https://static.tildacdn.com/tild6666-6263-4562-a631-626131346233/Montserratarm-ExtraB.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'MontserratARM';
+  src: url('https://static.tildacdn.com/tild3631-3034-4565-b934-323661323966/Montserratarm-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap
+}

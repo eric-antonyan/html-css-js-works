@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'sf pro display';
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #333;
+}
+
+.box {
+  position: relative;
+  background: #dfdbd4;
+  width: 300px;
+  height: 600px;
+  border-radius: 50px;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #010102;
+  border-radius: 50px;
+}
+
+.inner {
+  position: absolute;
+  background: url(../img/background-image.jpg) no-repeat center;
+  inset: 3px;
+  border: 10px solid #010102;
+  border-radius: 45px;
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.box:hover .inner {
+  opacity: 1;
+}
+
+.box:hover .navigation-panel {
+  bottom: 10px;
+}
+
+.box:hover .island-popup {
+  top: 10px;
+}
+
+.btn {
+  position: absolute;
+  top: 110px;
+  left: -2px;
+  width: 3px;
+  height: 26px;
+  border-radius: 10px 0 0 10px;
+  background: radial-gradient(#a0978e, #9c938a);
+  z-index: 10;
+}
+
+.btn.btn2 {
+  top: 160px;
+  height: 40px;
+}
+
+.btn.btn3 {
+  top: 220px;
+  height: 40px;
+}
+
+.rightSideBtn {
+  position: absolute;
+  top: 170px;
+  right: -2px;
+  width: 3px;
+  height: 70px;
+  border-radius: 0 10px 10px 0;
+  background: radial-gradient(#a0978e, #9c938a);
+  z-index: 10;
+}
+
+.island-popup {
+  position: absolute;
+  top: 0px;
+  width: 90px;
+  height: 25px;
+  border-radius: 20px;
+  background: #000;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.island-popup .user {
+  display: flex;
+  align-items: center;
+}
+
+.island-popup .user .usr-img {
+  width: 0px;
+  height: 0px;
+  object-fit: cover;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.island-popup .username {
+  opacity: 0;
+  transition: 0.5s;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  width: 0;
+  overflow: hidden;
+  text-wrap: nowrap;
+  margin-left: 15px;
+}
+
+.island-popup .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 13px;
+}
+
+.island-popup .accpet {
+  cursor: pointer;
+  color: #0f0;
+  transition: 0.5s;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.island-popup .disaccpet {
+  cursor: pointer;
+  color: #f00;
+  rotate: -180deg;
+  transition: 0.5s;
+  width: 14px;
+  height: 14px;
+}
+
+.island-popup:hover {
+  width: 200px;
+}
+
+.island-popup:hover .username {
+  opacity: 1;
+  width: 100%;
+}
+
+.island-popup:hover .right {
+  opacity: 1;
+}
+
+.island-popup.active .accpet {
+  width: 30px;
+  height: 30px;
+  background: #0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.island-popup.active .usr-img {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+
+.island-popup.active .disaccpet {
+  width: 30px;
+  height: 30px;
+  background: #f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.island-popup.active {
+  width: 250px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.navigation-panel {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.navigation-panel .navigator {
+  border-radius: 10px;
+  width: 100px;
+  height: 3px;
+  background: #fff;
+}

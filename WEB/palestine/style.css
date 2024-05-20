@@ -1,0 +1,41 @@
+:root {
+    --red-color: #E4312b;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --green-color: #149954;
+}
+
+::selection {
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front, .back {
+    width: 400px;
+    height: 600px;
+}
+
+.front {
+    background: var(--green-color);
+} 
+
+.back {
+    background: var(--red-color);
+}
+
+
+
+/* true */

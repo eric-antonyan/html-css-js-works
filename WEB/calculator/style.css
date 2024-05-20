@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  --button-width-and-height: 60px;
+}
+
+:root {
+    --background-color: #3a4452;
+    --calculator-background-color: #3a4452;
+    --shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 15px 15px rgba(0, 0, 0, 0.2);
+    --equal-background-color: #0078ff;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: var(--calculator-background-color);
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.calculator .display {
+    display: flex;
+}
+
+.calculator .display input {
+    flex: 1;
+    text-align: end;
+    font-size: 20px !important;
+    padding: 0 20px;
+    box-shadow: none;
+}
+
+.calculator input {
+    width: var(--button-width-and-height);
+    height: var(--button-width-and-height);
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.calculator .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.calculator .btns div {
+    display: flex;
+    gap: 5px;
+}
+
+.equalCont {
+    display: flex;
+}
+
+.equalCont .equal {
+    flex: 1;
+    background: var(--equal-background-color);
+}
+
+.operator {
+    color: #00aaff !important;
+}
+.a {
+    display: flex;
+}
+
+.operator.p {
+    flex: 1;
+}

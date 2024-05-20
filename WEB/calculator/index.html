@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input disabled placeholder="Enter number" type="text" id="display">
+            </div>
+            <div class="btns">
+                <div>
+                    <input type="button" value="AC" class="operator" onclick="display.value = ''">
+                    <input type="button" value="C" class="operator" onclick="display.value = display.value.toString().slice(0, -1)">
+                    <input type="button" value="," class="operator" onclick="display.value += '.'">
+                    <input type="button" value="÷" class="operator" onclick="display.value += '/'">
+                </div>
+                <div>
+                    <input type="button" value=">" class="operator" onclick="display.value += '>'">
+                    <input type="button" value="<" class="operator" onclick="display.value += '<'">
+                    <input type="button" value="x²" class="operator" onclick="display.value = xTwo(display.value)">
+                    <input type="button" value="x³" class="operator" onclick="display.value = xTree(display.value)">
+                </div>
+                <div>
+                    <input type="button" value="%" class="operator" onclick="display.value = display.value % 2 === 0 ? true + ', ' + display.value % 2 : false + ', ' + display.value % 2">
+                    <input type="button" value="π" class="operator" onclick="display.value += '3.141592653589793238462643383279502884197'">
+                    <input type="button" value="√" class="operator p" onclick="display.value = Math.sqrt(display.value)">
+                    <input type="button" value="√²" class="operator p" onclick="display.value = Math.SQRT2(display.value)">
+                </div>
+                <div>
+                    <input type="button" value="kg" class="operator" onclick="display.value = eval(display.value) * 1000 + 'kg'">
+                    <input type="button" value="g" class="operator" onclick="display.value = eval(display.value) / 1000 + 'g'">
+                    <input type="button" value="°F" class="operator p" onclick="display.value = eval((display.value - 32) * 5 / 9) + ' °C'">
+                    <input type="button" value="°C" class="operator p" onclick="display.value = eval((display.value * 9 / 5) + 32) + ' °F' ">
+                </div>
+                <div class="a">
+                    <input type="button" value="9" onclick="display.value += '9'">
+                    <input type="button" value="8" onclick="display.value += '8'">
+                    <input type="button" value="7" onclick="display.value += '7'">
+                    <input type="button" value="*" class="operator" onclick="display.value += '*'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4'">
+                    <input type="button" value="5" onclick="display.value += '5'">
+                    <input type="button" value="6" onclick="display.value += '6'">
+                    <input type="button" value="-" class="operator" onclick="display.value += '-'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1'">
+                    <input type="button" value="2" onclick="display.value += '2'">
+                    <input type="button" value="3" onclick="display.value += '3'">
+                    <input type="button" value="+" class="operator" onclick="display.value += '+'">
+                </div>
+                <div class="equalCont">
+                    <input type="button" value="00" onclick="display.value += '00'">
+                    <input type="button" value="0" onclick="display.value += '0'">
+                    <input type="button" class="equal" class="operator" value="=" onclick="display.value = eval(display.value)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const display = document.querySelector("#display");
+    </script>
+    <script>
+        function xTree(number) {
+            return number * number * number;
+        }
+
+        function xTwo(number) {
+            return number * number;
+        }
+    </script>
+</body>
+</html>

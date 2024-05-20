@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background-color: #03d0fc;
+  color: #f1f1f1;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #03d0fc;
+}
+
+.content {
+  padding: 10px;
+  height: 600px;
+  max-width: 400px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  display: flex;
+  color: #333;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 .o {
+  display: flex;
+  align-items: center;
+}
+
+h1 img {
+  width: 50px;
+}
+
+h1 span {
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  height: 40px;
+  background: #f9f9f9;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0 0 0 20px;
+}
+
+header input {
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+}
+
+header button {
+  width: 70px;
+  border: none;
+  background: #03d0fc;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+main {
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+  max-height: 455px;
+  overflow-y: scroll;
+}
+
+main .tasks {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 5px;
+}
+
+main .tasks .list {
+  position: relative;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 15px;
+  transition: 0.5s;
+  overflow: hidden;
+  opacity: 1;
+}
+
+main .tasks .list.remove {
+  height: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.del {
+  position: absolute;
+  right: -30px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  height: 100%;
+  transition: 0.5s cubic-bezier(0.64,-0.54,0.39,1.67);
+  background: #ec0047;
+}
+
+.fa-trash {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.list:hover .del {
+  right: 0;
+}
+
+main .tasks .list:hover {
+  box-shadow: 0 0 150px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 400px) {
+  .container {
+    align-items: start;
+  }
+
+  .container .content {
+    border-radius: 0;
+    height: 100%;
+  }
+}

@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian&family=Poppins&display=swap");
+
+@font-face {
+  font-family: "Artsakh";
+  src: url(./fonts/Artsakh-Font.ttf);
+}
+
+:root {
+  --window-height: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ff7070;
+}
+
+
+*:focus {
+  outline: 0;
+}
+
+.background {
+  user-select: none;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.background .bg {
+  bottom: -50px;
+  left: -50px;
+  position: absolute;
+  right: -50px;
+  top: -50px;
+}
+
+.background .bg img {
+  height: 100%;
+  filter: brightness(50%);
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.layerText {
+  position: fixed;
+  z-index: 0;
+  color: #fff;
+  font-size: 80px;
+  letter-spacing: 0.3em;
+  font-family: "Artsakh";
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  text-shadow: 0 0 15px rgb(0, 119, 255);
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 472px) {
+  .layerText {
+    font-size: 50px;
+    transition: 0.5s;
+  }
+
+  .background .bg img {
+    transition: 0.5s;
+  }
+}
+
+.site {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  font-family: "Poppins";
+}
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+  background: #ff7070;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.navbar .logo {
+  width: 40px;
+}
+
+.navbar .logo img {
+  width: 100%;
+}
+
+.navbar .logo .phoneVersion {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .navbar .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar .logo img {
+    display: none;
+  }
+  .navbar .logo .phoneVersion {
+    display: block;
+  }
+}
+
+.navbar .nav-items {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navbar .nav-items .nav-item {
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.site .content {
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.title::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+.title::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+.apps {
+  display: grid;
+  text-align: center;
+  margin-top: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+@media (max-width: 600px) {
+  .apps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .apps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+.app {
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+
+.app .appTitle {
+  color: #333;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.app .appLogo {
+  width: 100%;
+}
+
+.app .viewBtn {
+  background: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  color: #ff7070;
+  border: 1.5px solid #ff7070;
+  transition: 0.5s;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+
+.app .viewBtn:hover {
+  background: #ff7070;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  color: #ffffff;
+  letter-spacing: 0.3em;
+  border: 1.5px solid #ff7070;
+}
+
+.app .viewBtn a {
+  text-decoration: none;
+  color: #ff7070;
+}
+
+.app .viewBtn a:hover {
+  color: #ffffff;
+}

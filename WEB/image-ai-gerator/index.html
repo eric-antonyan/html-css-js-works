@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js" defer></script>
+  <title>Ai image gerator</title>
+</head>
+<body>
+  <section class="image-generator">
+    <div class="content">
+      <h1>Ai image Generator Tool</h1>
+      <p>Convert your image an image with in a second using this powered AI Image Generatior Tools</p>
+      <form action="" class="generate-form">
+        <input type="text" placeholder="Describe what you want see" class="prompt-input" required>
+        <div class="controls">
+          <select class="img-quantity">
+            <option value="1">1 Image</option>
+            <option value="2">2 Image</option>
+            <option value="3">3 Image</option>
+            <option value="4" selected>4 Image</option>
+          </select>
+          <button type="submit" class="generate-btn">Generate</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="image-galellery-container">
+    <section class="image-gallery">
+      <div class="img-card">
+        <img src="images/img1.webp" alt="image">
+        <a href="" class="download-btn">
+          <img src="images/download.png" alt="">
+        </a>
+      </div>
+      <div class="img-card">
+        <img src="images/img1.webp" alt="image">
+        <a href="" class="download-btn">
+          <img src="images/download.png" alt="">
+        </a>
+      </div>
+      <div class="img-card loading">
+        <img src="images/spinning-circles.svg" alt="image">
+        <a href="" class="download-btn">
+          <img src="images/download.png" alt="">
+        </a>
+      </div>
+      <div class="img-card">
+        <img src="images/img1.webp" alt="image">
+        <a href="" class="download-btn">
+          <img src="images/download.png" alt="">
+        </a>
+      </div>
+    </section>
+  </div>
+
+  
+</body>
+</html>

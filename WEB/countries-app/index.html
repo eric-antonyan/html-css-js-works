@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="source/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Welcome! <p>to Armenian Quiz</p></h1>
+    <img src="source/img/image1.webp" alt="" class="image">
+    <button onclick="openImage()" class="btn">Go to App</button>
+  </div>
+  <script>
+    const openImage = () => {
+      const image = document.querySelector('.image');
+      image.classList.toggle('show')
+    }
+  </script>
+</body>
+</html>

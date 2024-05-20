@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" id="color-theme" content="#ff8800" />
+    <title>Page - Home</title>
+  </head>
+  <body>
+    <div class="mini-time-popup">
+      
+    </div>
+    <div class="bottom-sheet-backdrop add-post-popup">
+      <ul class="content">
+        <div class="c-title">
+          <h3>Add new</h3>
+        </div>
+        <li id="addPhotoVsblBtn"><i class="fa fa-image"></i> Post</li>
+        <li><i class="fa fa-watch"></i> Story</li>
+        <i class="fa-solid close-add-post-popup close fa-xmark"></i>
+      </ul>
+    </div>
+    <div id="addPhotoVsbl">
+      <div class="backdrop">
+        <div class="content">
+          <div class="title">
+            <h3>Add new post</h3>
+          </div>
+          <div class="image-content">
+            <img class="cover-add-photo-image" src="https://upload.wikimedia.org/wikipedia/ru/9/94/%D0%93%D0%B8%D0%B3%D0%B0%D1%87%D0%B0%D0%B4.jpg" alt="">
+            <button onclick="chooseFileAndGet()" class="add-photo-button">Choose File</button>
+            <input accept="image/jpeg, image/jpg, image/png, image/gif" class="get-file" hidden type="file" name="choose-photo-image" id="">
+            <input class="add-post-text" name="add-post-text"  placeholder="Say something...">
+            <button class="anp-btn pointer">Add new Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="loading">
+        <div class="l-content">
+          loading<span id="loadingCirclesCount"></span>
+        </div>
+      </div>
+      <div class="pages-container">
+        <div class="pages">
+          <div id="home" class="home page" key="1">
+            <div class="title-bar">
+              <div class="messages">
+                <i class="far fa-message fa-xl"></i>
+              </div>
+              <div class="page-info">
+                <h3><i class="far fa-home"></i> Home</h3>
+              </div>
+              <div class="add-post">
+                <i class="far fa-plus fa-xl"></i>
+              </div>
+            </div>
+            <div class="content">
+              <header class="header stories">
+                <div class="user">
+                  <div class="user-image"></div>
+                  <p class="username">Your story</p>
+                </div>
+                <div class="user">
+                  <div class="user-image"></div>
+                  <p class="username">gigachad</p>
+                </div>
+                <div class="user">
+                  <div class="user-image"></div>
+                  <p class="username">andranik4458</p>
+                </div>
+                <div class="user">
+                  <div class="user-image"></div>
+                  <p class="username">andranik4458</p>
+                </div>
+                <div class="user">
+                  <div class="user-image"></div>
+                  <p class="username">andranik4458</p>
+                </div>
+                <div class="user">
+                  <div class="user-image"></div>
+                  <p class="username">andranik4458</p>
+                </div>
+                <div class="user">
+                  <div class="user-image"></div>
+                  <p class="username">andranik4458</p>
+                </div>
+              </header>
+              <div class="posts">
+                <div class="post1 post">
+                  <header class="post-header">
+                    <div class="left">
+                      <img
+                        class="cover-user-post-image"
+                        src="	https://upload.wikimedia.org/wikipedia/ru/9/94/%D0%93%D0%B8%D0%B3%D0%B0%D1%87%D0%B0%D0%B4.jpg"
+                        alt
+                      />
+                      <p>eric_antonyan</p>
+                    </div>
+                    <div class="right">
+                      <i
+                        id="postDetalisButton1"
+                        class="fa-solid fa-ellipsis-vertical poiner"
+                      ></i>
+                    </div>
+                  </header>
+                  <div class="post-image">
+                    <img
+                      class="cover-post-image"
+                      src="https://upload.wikimedia.org/wikipedia/ru/9/94/%D0%93%D0%B8%D0%B3%D0%B0%D1%87%D0%B0%D0%B4.jpg"
+                      alt
+                    />
+                  </div>
+                  <div class="bottom">
+                    <div class="left">
+                      <i class="like far fa-heart fa-xl poiner"></i>
+                      <i class="far fa-comment fa-xl poiner"></i>
+                      <i class="fas fa-paper-plane fa-lg poiner"></i>
+                    </div>
+                    <div class="right">
+                      <i class="far fa-bookmark fa-xl poiner"></i>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <b class="bold">eric_antonyan</b>
+                    <span
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Beatae architecto iste neque nulla ad, sapiente doloribus
+                      delectus velit magnam quidem amet autem corporis
+                      reprehenderit dicta sequi debitis atque assumenda ut
+                      dolorem ipsa a. Nesciunt nisi officiis vitae voluptatibus,
+                      odio earum id alias nulla sit laudantium ab suscipit
+                      possimus, quas iusto ipsum. Saepe officiis sed aperiam
+                      consequatur aspernatur, illum ducimus dolore doloremque
+                      assumenda numquam fuga esse. Totam non nobis tempore optio
+                      minus omnis expedita explicabo cumque ab provident ut amet
+                      illum perferendis iste unde laborum esse, accusantium
+                      sequi odit nihil! Quaerat dolor recusandae adipisci
+                      placeat quod deserunt animi sed ad neque.</span
+                    >
+                  </div>
+                  <div
+                    id="view-post-detalis1"
+                    class="bottom-sheet-backdrop post-detalis-popup1"
+                  >
+                    <ul class="content">
+                      <div class="c-title">
+                        <h3>Post detalis</h3>
+                      </div>
+                      <li><i class="fa fa-copy"></i> Copy post url</li>
+                      <li><i class="fa fa-trash"></i> Delete post</li>
+                      <li><i class="fa fa-edit"></i> Edit post</li>
+                      <i
+                        class="fa-solid close-post-content1 close fa-xmark"
+                      ></i>
+                    </ul>
+                  </div>
+                  <script>
+                    const postDetalisBtn1 = document.querySelector(
+                      "#postDetalisButton1"
+                    );
+                    const postDetalisPopup1 = document.querySelector(
+                      ".post-detalis-popup1"
+                    );
+
+                    postDetalisBtn1.onclick = function () {
+                      postDetalisPopup1.classList.add("active");
+                      setTimeout(() => {
+                        postDetalisPopup1
+                          .querySelector(".content")
+                          .classList.add("active");
+                      }, 500);
+                    };
+
+                    const closepostDetalisPopup1 = document.querySelector(
+                      ".close-post-content1"
+                    );
+
+                    closepostDetalisPopup1.onclick = function () {
+                      postDetalisPopup1
+                        .querySelector(".content")
+                        .classList.remove("active");
+                      setTimeout(() => {
+                        postDetalisPopup1.classList.remove("active");
+                      }, 500);
+                    };
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="profile" class="profile page" key="2">
+            <div class="title-bar">
+              <h3><i class="far fa-users"></i> Profile</h3>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-user"></i>
+              </div>
+              <div class="title">Profile</div>
+            </div>
+          </div>
+          <div id="messages" class="messages page" key="3">
+            <div class="title-bar">
+              <h3><i class="far fa-message"></i> Messages</h3>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-message"></i>
+              </div>
+              <div class="title">Messages</div>
+            </div>
+          </div>
+          <div id="settings" class="settings page" key="4">
+            <div class="title-bar">
+              <h3><i class="far fa-gear"></i> Settings</h3>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-gear"></i>
+              </div>
+              <div class="title">Settings</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-bar">
+        <div class="nav-item home pointer" key="1">
+          <a href="#home">
+            <i class="far fa-message"></i>
+          </a>
+        </div>
+        <div class="nav-item user pointer" key="2">
+          <a href="#profile">
+            <i class="far fa-users"></i>
+          </a>
+        </div>
+        <div class="nav-item messages pointer" key="3">
+          <a href="#messages">
+            <i class="far fa-message"></i>
+          </a>
+        </div>
+        <div class="nav-item settings pointer" key="4">
+          <a href="#settings">
+            <i class="far fa-gear"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
